@@ -13,6 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+.achievement-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.popup-box {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  background: #222;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: none;
+  z-index: 10;
+}
+
+.achievement-item:hover .popup-box {
+  display: block;
+}
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -325,18 +348,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="achievement-item">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h4>Competition Winner</h4>
-                            <p>Winner of 15+ competitions including Blind Coding, Find The Error, Code Retreat, and Maths Coding competitions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="col-lg-6 mb-4">
+    <div class="achievement-item">
+      <div class="achievement-icon">
+        <i class="fas fa-trophy"></i>
+      </div>
+      <div class="achievement-content">
+        <h4>Competition Winner</h4>
+        <p>Winner of 15+ competitions including Blind Coding, Find The Error, Code Retreat, and Maths Coding competitions.</p>
+      </div>
+      <!-- Popup box -->
+      <div class="popup-box">💡 Strong coding & problem-solving skills!</div>
+    </div>
+  </div>
+</div>
         </div>
     </section>
 
@@ -478,4 +503,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
